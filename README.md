@@ -2,5 +2,3 @@
 
 # Metabutler
 A modular telegram Python bot running on python3 with an sqlalchemy database forked from [Emilia](https://t.me/EmiliaHikariBot).
-
-
