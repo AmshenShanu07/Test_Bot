@@ -784,7 +784,7 @@ def export_data(update, context):
 	if cek.get('status'):
 		if jam <= int(cek.get('value')):
 			waktu = time.strftime("%H:%M:%S %d/%m/%Y", time.localtime(cek.get('value')))
-			send_message(update.effective_message, "You can backup data once in 3 hours!\n[Orang ini](tg://user?id={}) has backed up the data\nYou can backup data again at `{}`".format(cek.get('user'), waktu), parse_mode=ParseMode.MARKDOWN)
+			send_message(update.effective_message, "You can backup data once in 3 hours!\n[User](tg://user?id={}) has backed up the data\nYou can backup data again at `{}`".format(cek.get('user'), waktu), parse_mode=ParseMode.MARKDOWN)
 			return
 		else:
 			if user.id != OWNER_ID:

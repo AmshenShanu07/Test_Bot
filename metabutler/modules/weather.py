@@ -54,10 +54,6 @@ def weather(update, context):
 			msg += "<b>Maximum Temperature - </b> {0}°C\n".format(temp_max)
 			if pressure is not None:
 				msg += "<b>Pressure - </b> {0} hPa\n".format(pressure)
-			if sea_level is not None:
-				msg += "<b>Atmospheric pressure on the sea level - </b> {0} hPa\n".format(sea_level)
-			if grnd_level is not None:
-				msg += "<b>Atmospheric pressure on the ground level - </b> {0} hPa\n".format(grnd_level)
 			if humidity is not None:
 				msg += "<b>Humidity - </b> {0} %%\n".format(humidity)
 			if wind_speed is not None:
