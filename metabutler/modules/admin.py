@@ -339,8 +339,8 @@ def adminlist(update, context):
 		#if user.username:
 		#    name = escape_markdown("@" + user.username)
 		if status == "creator":
-			text += "\n 👑 Creator:"
-			text += "\n` • `{} \n\n 🔱 Admins:".format(name)
+			text += "\n 👑 *Creator:*"
+			text += "\n • {} (`{}`) \n\n 🔱 *Admins:*".format(name, user.id)
 	for admin in administrators:
 		user = admin.user
 		status = admin.status
@@ -351,7 +351,7 @@ def adminlist(update, context):
 		#if user.username:
 		#    name = escape_markdown("@" + user.username)
 		if status == "administrator":
-			text += "\n` • `{}".format(name)
+			text += "\n • {} (`{}`)".format(name, user.id)
 
 	try:
 		send_message(update.effective_message, text, parse_mode=ParseMode.MARKDOWN)
