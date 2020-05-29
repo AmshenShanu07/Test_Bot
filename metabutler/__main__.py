@@ -26,7 +26,7 @@ from metabutler.modules.helper_funcs.verifier import verify_welcome
 from metabutler.modules.connection import connect_button
 
 PM_START_TEXT = """
-Hi {}, my name is *{dispatcher.bot.first_name}*! I am a group manager bot.
+Hi {}, my name is *{context.bot.first_name}*! I am a group manager bot.
 
 You can find the list of available commands with /help.
 """
