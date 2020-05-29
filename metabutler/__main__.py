@@ -26,7 +26,7 @@ from metabutler.modules.helper_funcs.verifier import verify_welcome
 from metabutler.modules.connection import connect_button
 
 PM_START_TEXT = """
-Hi {}, my name is *{context.bot.first_name}*! I am a group manager bot.
+Hi {}, my name is *{}*! I am a group manager bot.
 
 You can find the list of available commands with /help.
 """
@@ -164,7 +164,7 @@ def start(update, context):
                 [InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
                 [InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/metabutlernews")],
                 [InlineKeyboardButton(text="Help❓", callback_data="help_back")]])
-            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name)), reply_markup=buttons, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name)), reply_markup=buttons, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
         update.effective_message.reply_text("I'm Alive")
 
