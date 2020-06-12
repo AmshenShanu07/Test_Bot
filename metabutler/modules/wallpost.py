@@ -47,4 +47,4 @@ def post(context):
     shutil.rmtree("wallpaper")
 
 j = updater.job_queue
-j.run_repeating(post, 3600, 600)
+j.run_repeating(post, 7200, 600)
