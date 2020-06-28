@@ -357,7 +357,7 @@ NOTE: all filter keywords are in lowercase. If you want your keyword to be a sen
 __mod_name__ = "Filters"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
-STOP_HANDLER = CommandHandler("stop", stop_filter)
+STOP_HANDLER = CommandHandler("stopfilter", stop_filter)
 LIST_HANDLER = DisableAbleCommandHandler("filters", list_handlers, admin_ok=True)
 CUST_FILTER_HANDLER = MessageHandler(CustomFilters.has_text & ~Filters.update.edited_message, reply_filter)
 
