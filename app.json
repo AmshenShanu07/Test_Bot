@@ -1,0 +1,31 @@
+{
+  "name": "Test_boy",
+  "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
+  "keywords": [
+    "telegram",
+    "best",
+    "group",
+    "manager",
+    "3"
+  ],
+  "repository": "hhttps://github.com/AmshenShanu07/Test_bot",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable env variables",
+      "value": "ANYTHING"
+    },
+    "TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "An integer of consisting of your owner ID",
+      "value": "683538773"
+    },
+    "OWNER_USERNAME": {
+      "description": "Your username",
+      "value": "Green_Hat_07"
+      }
+    }
+  ]
+}
