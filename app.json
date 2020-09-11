@@ -8,7 +8,7 @@
     "manager",
     "3"
   ],
-  "repository": "hhttps://github.com/AmshenShanu07/Test_bot",
+  "repository": "https://github.com/AmshenShanu07/Test_bot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
